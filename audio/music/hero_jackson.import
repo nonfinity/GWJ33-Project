@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/jackson's_theme-A#min-105.mp3-b084a4fd8e34c08792d7a70aee0fcc7f.mp3str"
+
+[deps]
+
+source_file="res://audio/music/jackson's_theme-A#min-105.mp3"
+dest_files=[ "res://.import/jackson's_theme-A#min-105.mp3-b084a4fd8e34c08792d7a70aee0fcc7f.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

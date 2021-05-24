@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/rooster_morning.mp3-5098172d921bdddf0d585f839f257e87.mp3str"
+
+[deps]
+
+source_file="res://audio/effects/rooster_morning.mp3"
+dest_files=[ "res://.import/rooster_morning.mp3-5098172d921bdddf0d585f839f257e87.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

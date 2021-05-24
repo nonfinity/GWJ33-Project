@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/palmer's_theme-Amin-90.mp3-ecdfeeea3c5eee971dac36671fdd44fc.mp3str"
+
+[deps]
+
+source_file="res://audio/music/palmer's_theme-Amin-90.mp3"
+dest_files=[ "res://.import/palmer's_theme-Amin-90.mp3-ecdfeeea3c5eee971dac36671fdd44fc.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

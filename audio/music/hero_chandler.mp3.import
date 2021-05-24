@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hero_chandler.mp3-87f626ae6533fc380fca2d85f58d0008.mp3str"
+
+[deps]
+
+source_file="res://audio/music/hero_chandler.mp3"
+dest_files=[ "res://.import/hero_chandler.mp3-87f626ae6533fc380fca2d85f58d0008.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

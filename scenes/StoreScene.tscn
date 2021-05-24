@@ -1,0 +1,417 @@
+[gd_scene load_steps=21 format=2]
+
+[ext_resource path="res://elements/ChatBox.tscn" type="PackedScene" id=1]
+[ext_resource path="res://scenes/StoreScene.gd" type="Script" id=2]
+[ext_resource path="res://assets/gossip_no.png" type="Texture" id=3]
+[ext_resource path="res://icon.png" type="Texture" id=4]
+[ext_resource path="res://assets/shop_cropped.png" type="Texture" id=5]
+[ext_resource path="res://assets/npc clear.png" type="Texture" id=6]
+[ext_resource path="res://elements/Item.tscn" type="PackedScene" id=7]
+[ext_resource path="res://assets/shop_foreground.png" type="Texture" id=8]
+[ext_resource path="res://assets/shop_leftwall.png" type="Texture" id=9]
+[ext_resource path="res://assets/gossip_down.png" type="Texture" id=11]
+[ext_resource path="res://elements/AdvanceButton.tscn" type="PackedScene" id=12]
+[ext_resource path="res://elements/Clock.tscn" type="PackedScene" id=13]
+[ext_resource path="res://elements/MusicManager.tscn" type="PackedScene" id=14]
+[ext_resource path="res://elements/Splash.tscn" type="PackedScene" id=15]
+[ext_resource path="res://elements/DayCount.tscn" type="PackedScene" id=16]
+[ext_resource path="res://elements/ScoreManager.tscn" type="PackedScene" id=17]
+[ext_resource path="res://elements/SecretButton.tscn" type="PackedScene" id=18]
+
+[sub_resource type="Animation" id=1]
+resource_name = "char_enter"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.3, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 150, 200 ), Vector2( 500, 200 ), Vector2( 400, 210 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.3, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.5, 0.5 ), Vector2( 0.5, 0.5 ), Vector2( 1, 1 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:rect_rotation")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3, 0.5, 0.7, 0.9, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, -10.0, 10.0, -10.0, 5.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=2]
+resource_name = "char_exit"
+tracks/0/type = "value"
+tracks/0/path = NodePath(".:rect_position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0, 0.7, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 400, 210 ), Vector2( 500, 200 ), Vector2( 150, 200 ) ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath(".:rect_scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0, 0.7, 1 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 0,
+"values": [ Vector2( 1, 1 ), Vector2( 0.5, 0.5 ), Vector2( 0.5, 0.5 ) ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:rect_rotation")
+tracks/2/interp = 2
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.1, 0.3, 0.5, 0.7, 1 ),
+"transitions": PoolRealArray( 1, 1, 1, 1, 1, 1 ),
+"update": 0,
+"values": [ 0.0, 10.0, -10.0, 10.0, -10.0, 0.0 ]
+}
+
+[sub_resource type="Animation" id=3]
+length = 0.3
+tracks/0/type = "bezier"
+tracks/0/path = NodePath(".:rect_position:x")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"points": PoolRealArray( 225, -0.146321, -15.7912, 0.146321, 15.7912, 310, -0.166981, 44.5165, 0.166981, -44.5165 ),
+"times": PoolRealArray( 0, 0.3 )
+}
+tracks/1/type = "bezier"
+tracks/1/path = NodePath(".:rect_position:y")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"points": PoolRealArray( 250, -0.25, 0, 0.25, 0, 250, -0.25, 0, 0.25, 0 ),
+"times": PoolRealArray( 0, 0.3 )
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath(".:rect_rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 0,
+"values": [ 90.0 ]
+}
+tracks/3/type = "value"
+tracks/3/path = NodePath(".:rect_scale")
+tracks/3/interp = 2
+tracks/3/loop_wrap = true
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/keys = {
+"times": PoolRealArray( 0, 0.3 ),
+"transitions": PoolRealArray( 1, 1 ),
+"update": 0,
+"values": [ Vector2( 0.5, 0.5 ), Vector2( 0.5, 0.5 ) ]
+}
+
+[node name="StoreScene" type="Control"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Managers" type="Control" parent="."]
+margin_right = 40.0
+margin_bottom = 40.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Score" parent="Managers" instance=ExtResource( 17 )]
+
+[node name="Music" parent="Managers" instance=ExtResource( 14 )]
+
+[node name="StoreView" type="Control" parent="."]
+margin_right = 723.0
+margin_bottom = 404.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Elements" type="Control" parent="StoreView"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="room_base" type="TextureRect" parent="StoreView/Elements"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 301.0
+margin_bottom = 196.0
+texture = ExtResource( 5 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="character" type="TextureRect" parent="StoreView/Elements"]
+margin_left = 500.0
+margin_top = 200.0
+margin_right = 660.0
+margin_bottom = 470.0
+rect_rotation = -10.0
+rect_scale = Vector2( 0.5, 0.5 )
+rect_pivot_offset = Vector2( 80, 0 )
+texture = ExtResource( 6 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="StoreView/Elements/character"]
+anims/char_enter = SubResource( 1 )
+anims/char_exit = SubResource( 2 )
+anims/char_peekaboo = SubResource( 3 )
+
+[node name="room_foreground" type="TextureRect" parent="StoreView/Elements"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 301.0
+margin_bottom = 196.0
+texture = ExtResource( 8 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Item0" parent="StoreView/Elements" instance=ExtResource( 7 )]
+margin_left = 300.0
+margin_top = 470.0
+margin_right = -373.0
+margin_bottom = 116.0
+pos_table = Vector2( 300, 470 )
+pos_floor = Vector2( 300, 1000 )
+
+[node name="Item1" parent="StoreView/Elements" instance=ExtResource( 7 )]
+margin_left = 400.0
+margin_top = 480.0
+margin_right = -273.0
+margin_bottom = 126.0
+pos_table = Vector2( 400, 480 )
+pos_floor = Vector2( 400, 1000 )
+
+[node name="Item2" parent="StoreView/Elements" instance=ExtResource( 7 )]
+margin_left = 515.0
+margin_top = 485.0
+margin_right = -158.0
+margin_bottom = 131.0
+pos_table = Vector2( 515, 485 )
+pos_floor = Vector2( 515, 1000 )
+
+[node name="Clock" parent="StoreView/Elements" instance=ExtResource( 13 )]
+margin_left = 630.242
+margin_top = 31.1709
+margin_right = 659.388
+margin_bottom = 63.7029
+rect_scale = Vector2( 0.8, 0.8 )
+
+[node name="DayCount" parent="StoreView/Elements" instance=ExtResource( 16 )]
+margin_left = 543.058
+margin_top = 35.3554
+margin_right = -104.942
+margin_bottom = -298.645
+
+[node name="room_leftwall" type="TextureRect" parent="StoreView/Elements"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_right = 301.0
+margin_bottom = 196.0
+mouse_filter = 2
+texture = ExtResource( 9 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false,
+"_editor_description_": ""
+}
+
+[node name="Buttons" type="Control" parent="StoreView"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="advance" parent="StoreView/Buttons" instance=ExtResource( 12 )]
+visible = false
+margin_left = 375.0
+margin_top = 170.0
+margin_right = 465.0
+margin_bottom = 230.0
+
+[node name="gossip" type="TextureButton" parent="StoreView/Buttons"]
+visible = false
+margin_left = 520.431
+margin_top = 217.789
+margin_right = 610.431
+margin_bottom = 277.789
+rect_min_size = Vector2( 90, 60 )
+disabled = true
+texture_normal = ExtResource( 11 )
+texture_disabled = ExtResource( 3 )
+expand = true
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="door" type="Button" parent="StoreView/Buttons"]
+margin_left = 126.0
+margin_top = 121.542
+margin_right = 201.0
+margin_bottom = 155.542
+text = "Dismis"
+
+[node name="secret" parent="StoreView/Buttons" instance=ExtResource( 18 )]
+visible = false
+margin_left = 310.727
+margin_top = 209.182
+margin_right = 370.727
+margin_bottom = 269.182
+
+[node name="ItemDrawer" type="Control" parent="."]
+anchor_top = 0.667
+anchor_right = 0.706
+anchor_bottom = 1.0
+margin_top = -0.200043
+margin_right = 0.0559692
+margin_bottom = -1.0
+mouse_filter = 2
+__meta__ = {
+"_edit_group_": true,
+"_edit_lock_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Options" type="HBoxContainer" parent="ItemDrawer"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+margin_top = 94.6529
+margin_right = -565.0
+margin_bottom = -12.3471
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SoundToggle" type="TextureButton" parent="ItemDrawer/Options"]
+visible = false
+margin_right = 64.0
+margin_bottom = 92.0
+texture_normal = ExtResource( 4 )
+
+[node name="ClockOut" type="TextureButton" parent="ItemDrawer/Options"]
+visible = false
+margin_left = 68.0
+margin_right = 132.0
+margin_bottom = 92.0
+texture_normal = ExtResource( 4 )
+
+[node name="Charges" type="HBoxContainer" parent="ItemDrawer"]
+anchor_top = 0.5
+anchor_right = 1.0
+anchor_bottom = 0.5
+margin_left = 801.37
+margin_top = 42.7378
+margin_right = 253.37
+margin_bottom = 62.7378
+custom_constants/separation = 20
+alignment = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="price0" type="Button" parent="ItemDrawer/Charges"]
+margin_left = 7.0
+margin_right = 47.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 40, 0 )
+text = "$"
+
+[node name="price1" type="Button" parent="ItemDrawer/Charges"]
+margin_left = 67.0
+margin_right = 107.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 40, 0 )
+text = "$$"
+
+[node name="price2" type="Button" parent="ItemDrawer/Charges"]
+margin_left = 127.0
+margin_right = 167.0
+margin_bottom = 20.0
+rect_min_size = Vector2( 40, 0 )
+text = "$$$"
+
+[node name="pickedCharge" type="Label" parent="ItemDrawer"]
+margin_left = 867.606
+margin_top = 113.688
+margin_right = 907.606
+margin_bottom = 127.688
+text = "$$"
+align = 1
+valign = 1
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Splash" parent="." instance=ExtResource( 15 )]
+visible = false
+
+[node name="ChatBox" parent="." instance=ExtResource( 1 )]
+anchor_left = 0.707
+anchor_bottom = 0.667
+margin_left = 0.0319824
+margin_bottom = 61.8
+
+[connection signal="button_pressed" from="StoreView/Elements/Item0" to="." method="_on_item_pressed" binds= [ 0 ]]
+[connection signal="button_pressed" from="StoreView/Elements/Item1" to="." method="_on_item_pressed" binds= [ 1 ]]
+[connection signal="button_pressed" from="StoreView/Elements/Item2" to="." method="_on_item_pressed" binds= [ 2 ]]
+[connection signal="button_pressed" from="StoreView/Buttons/advance" to="." method="_on_advance_pressed"]
+[connection signal="pressed" from="StoreView/Buttons/gossip" to="." method="_on_gossip_pressed"]
+[connection signal="pressed" from="StoreView/Buttons/door" to="." method="_on_door_pressed"]
+[connection signal="pressed" from="StoreView/Buttons/secret" to="." method="_on_secret_pressed"]
+[connection signal="pressed" from="ItemDrawer/Charges/price0" to="." method="_on_charge_pressed" binds= [ 0 ]]
+[connection signal="pressed" from="ItemDrawer/Charges/price1" to="." method="_on_charge_pressed" binds= [ 1 ]]
+[connection signal="pressed" from="ItemDrawer/Charges/price2" to="." method="_on_charge_pressed" binds= [ 2 ]]
+[connection signal="rooster_crow" from="Splash" to="." method="_on_Splash_rooster_crow"]

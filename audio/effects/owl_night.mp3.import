@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/owl_night.mp3-7a2f95b2559c8f825eddf0b7eab97342.mp3str"
+
+[deps]
+
+source_file="res://audio/effects/owl_night.mp3"
+dest_files=[ "res://.import/owl_night.mp3-7a2f95b2559c8f825eddf0b7eab97342.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

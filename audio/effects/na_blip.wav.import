@@ -1,0 +1,21 @@
+[remap]
+
+importer="wav"
+type="AudioStreamSample"
+path="res://.import/na_blip.wav-7cbb298053c940c9cca51383a6566b91.sample"
+
+[deps]
+
+source_file="res://audio/effects/na_blip.wav"
+dest_files=[ "res://.import/na_blip.wav-7cbb298053c940c9cca51383a6566b91.sample" ]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop=false
+compress/mode=0

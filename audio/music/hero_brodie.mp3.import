@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hero_brodie.mp3-8448cf956af936abade813836fd602cb.mp3str"
+
+[deps]
+
+source_file="res://audio/music/hero_brodie.mp3"
+dest_files=[ "res://.import/hero_brodie.mp3-8448cf956af936abade813836fd602cb.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

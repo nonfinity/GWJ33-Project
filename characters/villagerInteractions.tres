@@ -1,0 +1,722 @@
+{
+	"stockPhrases": {
+		"greeting": [
+			{ "type": "client", "dialog": "Can you help me?" },
+			{ "type": "client", "dialog": "Clerk!" },
+			{ "type": "client", "dialog": "Hi how are you?" },
+			{ "type": "clerk", "dialog": "Welcome to Sir Pawn-a-lot\'s Item Emporium" },
+			{ "type": "clerk", "dialog": "Next" },
+			{ "type": "clerk", "dialog": "How can I assist you today?" },
+			{ "type": "clerk", "dialog": "Items here! Get your items here!" },
+			{ "type": "clerk", "dialog": "At Sir Pawn-a-lot\'s we have a soft spot for hard cash" },
+			{ "type": "thought", "dialog": "Here comes trouble" }
+		],
+		"ask": [],
+		"fetch": [
+			{ "type": "client", "dialog": "Could you see if you have it?" },
+			{ "type": "clerk", "dialog": "Yes, we just gone one in yesterday" },
+			{ "type": "clerk", "dialog": "Let me check the back" },
+			{ "type": "thought", "dialog": "Now where was that..." }
+		],
+		"charge": [
+			{ "type": "client", "dialog": "No discounts, I guess" },
+			{ "type": "client", "dialog": "Now that\'s a bargain" },
+			{ "type": "client", "dialog": "Looks like I have just enough" },
+			{ "type": "clerk", "dialog": "That\'s the grand total" },
+			{ "type": "clerk", "dialog": "We can only let it go for this much" },
+			{ "type": "clerk", "dialog": "For you, I could go this low" },
+			{ "type": "clerk", "dialog": "It\'s a rare find, it\'ll cost you" },
+			{ "type": "thought", "dialog": "Did I add that up right?" }
+		],
+		"deliver": [
+			{ "type": "client", "dialog": "Yep. There it is" },
+			{ "type": "client", "dialog": "I guess this will work" },
+			{ "type": "client", "dialog": "Exactly what I wanted" },
+			{ "type": "clerk", "dialog": "There you go" },
+			{ "type": "clerk", "dialog": "Careful. It\'s fragile" },
+			{ "type": "thought", "dialog": "I hope they don\'t ask the return policy" }
+		],
+		"goodbye": [
+			{ "type": "client", "dialog": "Thanks. Bye" },
+			{ "type": "client", "dialog": "See you next time" },
+			{ "type": "client", "dialog": "Good bye" },
+			{ "type": "clerk", "dialog": "Thank you. Come again" },
+			{ "type": "clerk", "dialog": "Come back now, y\'all" },
+			{ "type": "clerk", "dialog": "Have a Pawn-derful day" },
+			{ "type": "clerk", "dialog": "An item a day keeps the demons at bay!" },
+			{ "type": "thought", "dialog": "Blech. Good riddance" }
+		],
+		"eject_early": [
+			{ "type": "client", "dialog": "You can\'t throw me out! I have rights!" },
+			{ "type": "client", "dialog": "back" },
+			{ "type": "client", "dialog": "back" },
+			{ "type": "client", "dialog": "back" },
+			{ "type": "clerk", "dialog": "Nope. We\'re done here" },
+			{ "type": "clerk", "dialog": "Stop. Get out" },
+			{ "type": "clerk", "dialog": "We don\'t do business with your kind" },
+			{ "type": "clerk", "dialog": "Nothing like that in stock" }
+		],
+		"eject_charge": [
+			{ "type": "client", "dialog": "Oh wow. I wasn\'t expecting it to be that much. No thanks" },
+			{ "type": "client", "dialog": "I don\'t have that much on me. I\'ll be back later" },
+			{ "type": "client", "dialog": "What? It\'s not worth half that. You\'re not robbing me today, bucko" },
+			{ "type": "client", "dialog": "Sorry, all my money is Alduinish. I\'ll need to change it first" },
+			{ "type": "clerk", "dialog": "That\'s not enough money" },
+			{ "type": "clerk", "dialog": "Looks like you\'re short" },
+			{ "type": "clerk", "dialog": "I can\'t sell it for that price" },
+			{ "type": "clerk", "dialog": "On second thought, I\'d rather hold on to this" }
+		]
+	},
+	"interactions": [
+		{
+			"doc_col": "ZZZ",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Items" },],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "E",
+			"greeting": [
+				{ "type": "client", "dialog": "Shh..." }
+			],
+			"ask": [
+				{ "type": "client", "dialog": "Have you been to Drury Lane?" },
+				{ "type": "clerk", "dialog": "No. What are you talking about?" },
+				{ "type": "client", "dialog": "*sigh* Can I buy a cloak?" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [
+				{ "type": "client", "dialog": "Let me know if you see the Muffin Man" }
+			],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "F",
+			"greeting": [
+				{ "type": "client", "dialog": "Shh..." }
+			],
+			"ask": [
+				{ "type": "client", "dialog": "Do you know the muffin man?" },
+				{ "type": "clerk", "dialog": "No. What are you talking about?" },
+				{ "type": "client", "dialog": "*sigh* Can I buy a dagger?" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [
+				{ "type": "client", "dialog": "Come see me if you ever on Drury Lane" }
+			],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "G",
+			"greeting": [
+				{ "type": "clerk", "dialog": "Welcome Lady Intrenhall" }
+			],
+			"ask": [
+				{ "type": "client", "dialog": "I need a favor for my beau. A lace kerchief would be perfect" }
+			],
+			"fetch": [
+				{ "type": "clerk", "dialog": "I think we have a few of those around here" },
+				{ "type": "client", "dialog": "How wonderful" }
+			],
+			"charge": [],
+			"deliver": [
+				{ "type": "client", "dialog": "My savior! Oh, and I love the daffodil pattern on it" },
+				{ "type": "clerk", "dialog": "I\'m so glad you like it" }
+			],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "H",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Feeling rich today. Want to buy a locket for my love" },
+				{ "type": "clerk", "dialog": "A perennial favorite" }
+			],
+			"fetch": [
+				{ "type": "clerk", "dialog": "Gold locket, coming right up" }
+			],
+			"charge": [
+				{ "type": "client", "dialog": "Oof! That\'s rich, but today, so am I" }
+			],
+			"deliver": [
+				{ "type": "client", "dialog": "This is a perfect fit for Lady Intrenhall\'s gentle figure" }
+			],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "I",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "I\'m looking for a painting by Manhof" },
+				{ "type": "clerk", "dialog": "Lady Intrenhall by The Cascade?" },
+				{ "type": "client", "dialog": "You\'re familiar?" },
+				{ "type": "clerk", "dialog": "I\'ll be sad to see it go" }
+			],
+			"fetch": [
+				{ "type": "clerk", "dialog": "I know just where she is" }
+			],
+			"charge": [
+				{ "type": "client", "dialog": "Oh my. Even lovlier than I imagined" }
+			],
+			"deliver": [],
+			"goodbye": [
+				{ "type": "clerk", "dialog": "One last look before you go?" },
+				{ "type": "client", "dialog": "Of course" },
+				{ "type": "clerk", "dialog": "Good by my Lady..." }
+			],
+			"eject_early": [
+				{ "type": "client", "dialog": "You just want her for yourself!" }
+			],
+			"eject_charge": [
+				{ "type": "client", "dialog": "You just want her for yourself!" }
+			]
+		},
+		{
+			"doc_col": "J",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "My Lady offered me her heart, if I could find the key" },
+				{ "type": "clerk", "dialog": "So... you want a key?" },
+				{ "type": "client", "dialog": "I suppose I do?" }
+			],
+			"fetch": [
+				{ "type": "clerk", "dialog": "These keys have no matching lock that we can find" }
+			],
+			"charge": [
+				{ "type": "client", "dialog": "I suppose this one will do" }
+			],
+			"deliver": [],
+			"goodbye": [],
+			"eject_early": [
+				{ "type": "clerk", "dialog": "We don\'t have any keys to hearts. Just locks" },
+				{ "type": "client", "dialog": "Yeah. It doesn\'t make sense to me either" }
+			],
+			"eject_charge": [
+				{ "type": "client", "dialog": "Well. I suppose a bouqet of daffodil\'s will have to do the trick" }
+			]
+		},
+		{
+			"doc_col": "K",
+			"greeting": [
+				{ "type": "clerk", "dialog": "Welcome Doctor" },
+				{ "type": "client", "dialog": "Good to see you healthy again!" }
+			],
+			"ask": [
+				{ "type": "client", "dialog": "I\'m looking for a plague mask" },
+				{ "type": "clerk", "dialog": "Oh no! Don\'t tell me there\'s a plague" },
+				{ "type": "client", "dialog": "No no. It\'s for a masquerade" },
+				{ "type": "thought", "dialog": "Sure it is..." }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [],
+			"eject_early": [
+				{ "type": "client", "dialog": "NO! Without the mask I\'ll never catch boogie fever!" }
+			],
+			"eject_charge": [
+				{ "type": "client", "dialog": "NO! Without the mask I\'ll never catch boogie fever!" }
+			]
+		},
+		{
+			"doc_col": "L",
+			"greeting": [
+				{ "type": "client", "dialog": "*hack* *cough* *cough*" },
+				{ "type": "clerk", "dialog": "Please stay behind the line" }
+				
+			],
+			"ask": [
+				{ "type": "client", "dialog": "Medicine *hack* I need medicine" },
+				{ "type": "clerk", "dialog": "What\'s wrong?" },
+				{ "type": "client", "dialog": "I\'ve got the fever" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [
+				{ "type": "clerk", "dialog": "Hope you feel better" },
+				{ "type": "client", "dialog": "*cough* Stay away *cough* from the boogie" }
+			],
+			"eject_early": [
+				{ "type": "client", "dialog": "Don\'t bring that sickness in here! Go to the doctor!" }
+			],
+			"eject_charge": [
+				{ "type": "client", "dialog": "*coughs violently* but I\'m so ill..." }
+			]
+		},
+		{
+			"doc_col": "M",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "I need oil of basilisk" },
+				{ "type": "clerk", "dialog": "Is that legal?" },
+				{ "type": "client", "dialog": "Do you have it?" }
+			],
+			"fetch": [
+				{ "type": "clerk", "dialog": "Break time. I\'m getting lunch. You should leave... or not" },
+				{ "type": "client", "dialog": "Is that so..." }
+			],
+			"charge": [
+				{ "type": "clerk", "dialog": "I love to put this truffle oil on bread, but it\'s expensive" },
+				{ "type": "client", "dialog": "Certainly sounds interesting" },
+				{ "type": "clerk", "dialog": "It even makes rock hard bread taste great" }
+			],
+			"deliver": [
+				{ "type": "client", "dialog": "I will have to try it then" },
+				{ "type": "clerk", "dialog": "You won\'t be disappointed" }
+			],
+			"goodbye": [],
+			"eject_early": [
+				{ "type": "clerk", "dialog": "Take your black magics elsewhere foul sorcerer!" },
+				{ "type": "client", "dialog": "No need to make a scene. I\'m leaving" }
+			],
+			"eject_charge": [
+				{ "type": "clerk", "dialog": "Like I said, it\'s very expensive" },
+				{ "type": "client", "dialog": "I see..." }
+			]
+		},
+		{
+			"doc_col": "N",
+			"greeting": [
+				{ "type": "client", "dialog": "*The stranger is acting erratically*" }
+			],
+			"ask": [
+				{ "type": "client", "dialog": "You got any denner sweets?" },
+				{ "type": "clerk", "dialog": "... maybe" },
+				{ "type": "client", "dialog": "I\'ve got to get some, buddy" }
+			],
+			"fetch": [
+				{ "type": "clerk", "dialog": "There was a candy jar around here somewhere" },
+				{ "type": "client", "dialog": "*the stranger begins to salivate*" }
+			],
+			"charge": [
+				{ "type": "clerk", "dialog": "Let me see your money" },
+				{ "type": "client", "dialog": "It\'s fine man, no stress" },
+				{ "type": "clerk", "dialog": "You get nothing until I see the money" },
+				{ "type": "client", "dialog": "Ok. ok. OK!" }
+			],
+			"deliver": [
+				{ "type": "client", "dialog": "*the stranger immediately begins to chew the denner sweet. His eyes become glassy*" }
+			],
+			"goodbye": [
+				{ "type": "clerk", "dialog": "Don\'t come back during open hours" },
+				{ "type": "client", "dialog": "Whaaa? *the stranger smiles at something you can\'t see*" }
+			],
+			"eject_early": [
+				{ "type": "client", "dialog": "Yeah? Well screw you. You\'re not so high and mighty!" }
+			],
+			"eject_charge": [
+				{ "type": "client", "dialog": "Come on! I\'m good for it! Just one denner sweet!" }
+			]
+		},
+		{
+			"doc_col": "O",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Oi. I need a stick with some heft" },
+				{ "type": "clerk", "dialog": "With heft?" },
+				{ "type": "client", "dialog": "Yeah, for the rats in the cellar" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [
+				{ "type": "client", "dialog": "Aye! Now that\'s a rat beater" }
+			],
+			"goodbye": [],
+			"eject_early": [
+				{ "type": "client", "dialog": "Wot\'s a man supposed to do about rats then?!" }
+			],
+			"eject_charge": [
+				{ "type": "client", "dialog": "Wot\'s a man supposed to do about rats then?!" }
+			]
+		},
+		{
+			"doc_col": "P",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Good man. Have you any bows?" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "Q",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "I need a barrel. Do you have any?" },
+				{ "type": "clerk", "dialog": "What size do you need?" },
+				{ "type": "client", "dialog": "Nothing you couldn\'t fit a small child into" }
+			],
+			"fetch": [],
+			"charge": [
+				{ "type": "client", "dialog": "You wouldn\'t mind ... losing the receipt on this one would you?" },
+				{ "type": "thought", "dialog": "This is strange..." }
+			],
+			"deliver": [],
+			"goodbye": [
+				{ "type": "client", "dialog": "So long. Thank you for *not* selling me a barrel. *wink*" },
+				{ "type": "thought", "dialog": "Wait a minute..." }
+			],
+			"eject_early": [
+				{ "type": "client", "dialog": "Fine. Someone else will have a barrel. The carter will never need to know" }
+			],
+			"eject_charge": [
+				{ "type": "clerk", "dialog": "You best leave before the guards check in here" },
+				{ "type": "client", "dialog": "Sorry! I can\'t stay. I realized I am late for a thing... at the place" }
+			]
+		},
+		{
+			"doc_col": "R",
+			"greeting": [
+				{ "type": "client", "dialog": "Have you heard the truth of Tamborlin the Holy?" },
+				{ "type": "clerk", "dialog": "No, but what can I get you?" }
+			],
+			"ask": [
+				{ "type": "client", "dialog": "I don\'t need worldly goods! I\'m here to save your soul" },
+				{ "type": "clerk", "dialog": "Save my soul from what?" },
+				{ "type": "client", "dialog": "From THE DARK ONE my child and his villainy" }
+			],
+			"fetch": [
+				{ "type": "clerk", "dialog": "Sure. I need all the help I can get against evil" },
+				{ "type": "client", "dialog": "Excellent my child" }
+			],
+			"charge": [
+				{ "type": "client", "dialog": "Now repeat after me: \'I promise my soul to Tamborlin\'" }
+			],
+			"deliver": [
+				{ "type": "clerk", "dialog": "I promise my soul to Tamborlin" }
+			],
+			"goodbye": [
+				{ "type": "client", "dialog": "Welcome into the fold. Until next time brother!" },
+				{ "type": "clerk", "dialog": "Until next time brother" }
+			],
+			"eject_early": [
+				{ "type": "clerk", "dialog": "Go bother a brothel you old fool" }
+			],
+			"eject_charge": [
+				{ "type": "clerk", "dialog": "Yeah, no. I\'m not comfortable with this" },
+				{ "type": "client", "dialog": "You gamble with your very soul!" }
+			]
+		},
+		{
+			"doc_col": "S",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Looking for pants" },
+				{ "type": "clerk", "dialog": "What size?" },
+				{ "type": "client", "dialog": "Just long enough to reach the floor" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [
+				{ "type": "client", "dialog": "Now that\'s a fine pant! Wish I could afford a pair of them! har har" },
+				{ "type": "clerk", "dialog": "That joke is just as funny as last time" },
+				{ "type": "thought", "dialog": "Kill me now" }
+			],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "T",
+			"greeting": [
+				{ "type": "clerk", "dialog": "Need another love potion?" },
+				{ "type": "client", "dialog": "Is the sun shining?" }
+			],
+			"ask": [
+				{ "type": "clerk", "dialog": "Usual dose?" },
+				{ "type": "client", "dialog": "Yes dearie" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [
+				{ "type": "clerk", "dialog": "I\'ll never get used to the smell of this" },
+				{ "type": "client", "dialog": "That\'s because it\'s not for you. If it was, you\'d love it. And me, I suppose" }
+			],
+			"goodbye": [
+				{ "type": "clerk", "dialog": "Have fun!" },
+				{ "type": "client", "dialog": "I always do!" }
+			],
+			"eject_early": [
+				{ "type": "client", "dialog": "You don\'t understand! I have plans! Amorous plans!" }
+			],
+			"eject_charge": [
+				{ "type": "clerk", "dialog": "You don\'t have enough money this week" },
+				{ "type": "client", "dialog": "I had to try anyway, sweets. See you next week" }
+			]
+		},
+		{
+			"doc_col": "U",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Could a wandering scribe get parchment in this establishment?" },
+				{ "type": "clerk", "dialog": "He could" },
+				{ "type": "client", "dialog": "Good. Then he shall" }
+			],
+			"fetch": [],
+			"charge": [
+				{ "type": "clerk", "dialog": "Want to write an epic poem about my life?" },
+				{ "type": "client", "dialog": "Have you done anything epic?" },
+				{ "type": "clerk", "dialog": "I guess not" }
+			],
+			"deliver": [
+				{ "type": "clerk", "dialog": "How about a moving ballad?" },
+				{ "type": "client", "dialog": "Have you any great love stories?" },
+				{ "type": "clerk", "dialog": "No. Just work" }
+			],
+			"goodbye": [],
+			"eject_early": [
+				{ "type": "client", "dialog": "I am a sactioned scribe! I do not merit this foul treatment!" }
+			],
+			"eject_charge": [
+				{ "type": "client", "dialog": "You embarrass this village with your exporbitant prices! Good day" }
+			]
+		},
+		{
+			"doc_col": "V",
+			"greeting": [
+				{ "type": "client", "dialog": "Are you still open?" }
+			],
+			"ask": [
+
+				{ "type": "client", "dialog": "I need a clock" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [
+				{ "type": "clerk", "dialog": "Remember to wind it every day" }
+			],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "W",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "I need a mirror. A *special* mirror" },
+				{ "type": "clerk", "dialog": "What sort of special mirror?" },
+				{ "type": "client", "dialog": "(softly) a *magic* mirror" },
+				{ "type": "thought", "dialog": "This person is insane" }
+			],
+			"fetch": [
+				{ "type": "thought", "dialog": "Maybe a normal one will do?" }
+			],
+			"charge": [
+				{ "type": "client", "dialog": "An arm and a leg would still be a deal for this" }
+			],
+			"deliver": [
+				{ "type": "client", "dialog": "YES! That is it! I saw it in a dream!" }
+			],
+			"goodbye": [
+				{ "type": "client", "dialog": "mwa ha ha HA HA HA" },
+				{ "type": "thought", "dialog": "What a nutcase" }
+			],
+			"eject_early": [
+				{ "type": "clerk", "dialog": "No such thing. Stop wasting my time" },
+				{ "type": "client", "dialog": "Yes it does too exist! I swear!" }
+			],
+			"eject_charge": [
+				{ "type": "client", "dialog": "Bah! I\'ll get that mirror from you! One way or another!" }
+			]
+		},
+		{
+			"doc_col": "X",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "I need a bowl that\'s good for soup" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "Y",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "I want to get a toy for my nephew" },
+				{ "type": "clerk", "dialog": "What sort of toy do you want?" },
+				{ "type": "client", "dialog": "A toy soldier or a top would be fine" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": [
+				{ "type": "client", "dialog": "It\'s for a child! My god man. Have you no heart?" }
+			]
+		},
+		{
+			"doc_col": "Z",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Do you carry literature?" },
+				{ "type": "clerk", "dialog": "Like books?" },
+				{ "type": "client", "dialog": "No! I mean literature" },
+				{ "type": "clerk", "dialog": "Yes?" },
+				{ "type": "client", "dialog": "I need H J Kiffe\'s Collection of Romantic Parables" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [
+				{ "type": "thought", "dialog": "The lithographs aren\'t as interesting during the day. Strange" }
+			],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "AA",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Clerk, I need a globe" },
+				{ "type": "clerk", "dialog": "Would a map do?" },
+				{ "type": "client", "dialog": "No, it must be a globe" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [],
+			"eject_early": [
+				{ "type": "client", "dialog": "The globe is out there. I just need to find it" }
+			],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "AB",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Stuffed owlbear. Got one?" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [
+				{ "type": "thought", "dialog": "So long you terrifying monster" }
+			],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "AC",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "I need an alembic for my experiments" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [
+				{ "type": "clerk", "dialog": "Stay safe" }
+			],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "AD",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Need some warm gloves. I\'m headed to the mountains" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [
+				{ "type": "client", "dialog": "Happy hunting" }
+			],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "AE",
+			"greeting": [
+				{ "type": "client", "dialog": "Chappie! A hand please!" },
+				{ "type": "clerk", "dialog": "This way. What can I do for you?" }
+			],
+			"ask": [
+				{ "type": "client", "dialog": "My monocle broke and now I\'m blind as a mole" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [
+				{ "type": "client", "dialog": "Ah! Blessd sight how I\'ve missed you" }
+			],
+			"goodbye": [],
+			"eject_early": [
+				{ "type": "client", "dialog": "COULD YOU AT LEAST HELP ME FIND THE DOOR!" }
+			],
+			"eject_charge": [
+				{ "type": "client", "dialog": "No!! Precious sight! You elude me again!" }
+			]
+		},
+		{
+			"doc_col": "AF",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "Got any quills? I my geese flew away for the season" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "AG",
+			"greeting": [
+				{ "type": "thought", "dialog": "By the love of Tamborlin, what is that smell?" },
+				{ "type": "client", "dialog": "Howdy!" }
+			],
+			"ask": [
+				{ "type": "client", "dialog": "Bathing is for chumps. I\'d like some perfume" },
+				{ "type": "clerk", "dialog": "Please stay behind the line" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [
+				{ "type": "thought", "dialog": "wow what a stinker" }
+			],
+			"eject_early": [],
+			"eject_charge": []
+		},
+		{
+			"doc_col": "AH",
+			"greeting": [],
+			"ask": [
+				{ "type": "client", "dialog": "My mule ate my snuss box. I require a new one" }
+			],
+			"fetch": [],
+			"charge": [],
+			"deliver": [],
+			"goodbye": [],
+			"eject_early": [],
+			"eject_charge": []
+		}
+	]
+}

@@ -1,0 +1,36 @@
+{
+	"name": "Sir Palmer, Esq",
+	"portrait": "res://assets/placeholder_dude.jpg",
+	"isHero": true,
+	"nameColor": "#593982",
+	"textBgColor": "#DD393D82",
+	"dialog": {
+		"greetings": [ 
+			"Clerk! To me" 
+		],
+		"goodbye": [
+			"I said good day sir"
+		],
+		"strongAgree": [ 
+			"Finally! This will make him proud!"
+		],
+		"agree": [
+			"Sure"
+		],
+		"decline": [
+			"No."
+		],
+		"strongDecline": [
+			"Don\'t embarrass yourself before my father\'s son"
+		],
+		"gossip": [
+			"No news worth sharing with someone like you",
+			"*pointedly ignores the questions*",
+			"Fine. I hear it\'s been hot lately",
+			"Nothing any of you has done is interesting"
+		]
+	},
+	"keyPhrases": {
+		"0": "Surely this will be the end of you"
+	}
+}

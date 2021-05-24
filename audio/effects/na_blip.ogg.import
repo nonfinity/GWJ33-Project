@@ -1,0 +1,15 @@
+[remap]
+
+importer="ogg_vorbis"
+type="AudioStreamOGGVorbis"
+path="res://.import/na_blip.ogg-c1a29a0ae58e6205981fee0fe9599531.oggstr"
+
+[deps]
+
+source_file="res://audio/effects/na_blip.ogg"
+dest_files=[ "res://.import/na_blip.ogg-c1a29a0ae58e6205981fee0fe9599531.oggstr" ]
+
+[params]
+
+loop=false
+loop_offset=0

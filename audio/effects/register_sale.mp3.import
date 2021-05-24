@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/register_sale.mp3-2548ea1757574eff02abd948dd0b5cdc.mp3str"
+
+[deps]
+
+source_file="res://audio/effects/register_sale.mp3"
+dest_files=[ "res://.import/register_sale.mp3-2548ea1757574eff02abd948dd0b5cdc.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

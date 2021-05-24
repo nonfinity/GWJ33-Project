@@ -1,0 +1,45 @@
+{
+	"name": "The Clerk",
+	"portrait": "",
+	"isHero": false,
+	"nameColor": "#CCCCCC",
+	"textBgColor": "#DDBBBBBB",
+	"dialog": {
+		"greetings": [ 
+			"Welcome to Sir Pawn-a-lot\'s Item Emporium" ,
+			"Next",
+			"How can I assist your questing?",
+			"Items here. Get your items here"
+		],
+		"goodbye": [
+			"Thank you come again",
+			"Have a Pawn-derful day",
+			"Remember to fill out the survey on the back of your receipt",
+			"Good bye"
+		],
+		"strongAgree": [ 
+			"Finally! This will make him proud!"
+		],
+		"agree": [
+			"Sure. Anything that you need and we are happy to assist in all your questing and item associated needs!"
+		],
+		"decline": [
+			"No."
+		],
+		"strongDecline": [
+			"Don\'t embarrass yourself before my father\'s son"
+		],
+		"gossip": [
+			"Have you heard the news?",
+			"Anything interesting happen lately?",
+			"Surely your life isn\'t as boring as mine?",
+			"Please. Tell me something to stop the tedium"
+		]
+	},
+	"keyPhrases": {
+		"0": "Hi and welcome"
+	},
+	"keyThoughts": {
+		"0": "Not this fool again"
+	}
+}

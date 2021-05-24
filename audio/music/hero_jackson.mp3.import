@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hero_jackson.mp3-5dc264a71775dcae4f807003a9fafbee.mp3str"
+
+[deps]
+
+source_file="res://audio/music/hero_jackson.mp3"
+dest_files=[ "res://.import/hero_jackson.mp3-5dc264a71775dcae4f807003a9fafbee.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0
